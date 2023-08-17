@@ -12,7 +12,7 @@ public class PostOffice {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
-    private int index;
+    private String index;
 
     private String name;
 
@@ -24,7 +24,7 @@ public class PostOffice {
     public PostOffice() {
     }
 
-    public PostOffice(Long id, int index, String name) {
+    public PostOffice(Long id, String index, String name) {
         this.id = id;
         this.index = index;
         this.name = name;
@@ -34,11 +34,11 @@ public class PostOffice {
         return id;
     }
 
-    public int getIndex() {
+    public String getIndex() {
         return index;
     }
 
-    public void setIndex(int index) {
+    public void setIndex(String index) {
         this.index = index;
     }
 

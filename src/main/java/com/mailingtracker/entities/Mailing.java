@@ -15,7 +15,7 @@ public class Mailing {
 
     private MailingType type;
 
-    private int recipientIndex;
+    private String recipientIndex;
 
     private String recipientAddress;
 
@@ -29,8 +29,7 @@ public class Mailing {
     public Mailing() {
     }
 
-    public Mailing(Long id, MailingType type, int recipientIndex, String recipientAddress, String recipientName) {
-        this.id = id;
+    public Mailing(MailingType type, String recipientIndex, String recipientAddress, String recipientName) {
         this.type = type;
         this.recipientIndex = recipientIndex;
         this.recipientAddress = recipientAddress;
@@ -49,11 +48,11 @@ public class Mailing {
         this.type = type;
     }
 
-    public int getRecipientIndex() {
+    public String getRecipientIndex() {
         return recipientIndex;
     }
 
-    public void setRecipientIndex(int recipientIndex) {
+    public void setRecipientIndex(String recipientIndex) {
         this.recipientIndex = recipientIndex;
     }
 

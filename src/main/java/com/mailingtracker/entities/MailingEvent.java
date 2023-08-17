@@ -32,7 +32,7 @@ public class MailingEvent {
     public MailingEvent() {
     }
 
-    public MailingEvent(Long id, Date date, EventType eventType, Mailing mailing, PostOffice postOffice) {
+    public MailingEvent(Date date, EventType eventType, Mailing mailing, PostOffice postOffice) {
         this.id = id;
         this.date = date;
         this.eventType = eventType;
